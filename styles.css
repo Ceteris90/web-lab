@@ -5,3 +5,26 @@ body {
   background: #f6f8fa;
 }
 
+[data-theme="dark"] {
+  background: #121212; /* A dark background */
+  color: #e0e0e0;      /* A light font color for contrast */
+}
+
+[data-theme="dark"] #theme-toggle-btn {
+  background: #e0e0e0;
+  color: #121212;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#theme-toggle-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
