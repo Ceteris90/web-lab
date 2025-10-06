@@ -2,17 +2,32 @@ body {
   font-family: system-ui, sans-serif;
   margin: 0;
   padding: 2rem;
-  background: #f6f8fa;
+  background: #ffffff; /* A clean white background */
+  color: #333333; /* A soft black for readability */
 }
 
+/* Dark theme styles */
 [data-theme="dark"] {
-  background: #121212; /* A dark background */
-  color: #e0e0e0;      /* A light font color for contrast */
+  background: #1a1a1a; /* A deep charcoal gray */
+  color: #f0f0f0;      /* A very light gray for text */
 }
 
+/* Button styles for both themes */
+#theme-toggle-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333333;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Dark theme button styles */
 [data-theme="dark"] #theme-toggle-btn {
-  background: #e0e0e0;
-  color: #121212;
+  background-color: #333333;
+  color: #f0f0f0;
+  border-color: #666666;
 }
 
 header {
@@ -22,9 +37,3 @@ header {
   margin-bottom: 2rem;
 }
 
-#theme-toggle-btn {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
